@@ -1,3 +1,5 @@
-# atividade-08
+# Registro de Alunos
+Atividade feita como tarefa passada em sala de aula.
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/atividade-08)
+[Ver o Projeto ⚡️](https://stackblitz.com/edit/atividade-08)
+[Gamebielo ⚡️](https://stackblitz.com/@Gamebielo)
