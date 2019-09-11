@@ -1,0 +1,30 @@
+<div class="container">
+  <div [hidden]="submitted">
+
+    <form (ngSubmit)="salvar()" #alunoForm="ngForm">
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" class="form-control" id="name"
+               required
+               [(ngModel)]="aluno.nome" name="name"
+               #name="ngModel">
+        <div [hidden]="name.valid || name.pristine"
+             class="alert alert-danger">
+          Nome é obrigatório
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="sexo">Sexo</label> <br>
+        <input type="radio" value="Feminino" name="gender"
+        [(ngModel)]="aluno.sexo" required #gender="ngModel"> Feminino &nbsp;
+        <input type="radio" value="Masculino" name="gender" [(ngModel)]="aluno.sexo" required #gender="ngModel"> Masculino 
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-success" [disabled]="!alunoForm.form.valid">Salvar</button>
+        <button type="reset" class="btn btn-light border border-1">Limpar</button>
+      </div>
+    </form>
+  </div>
+</div>
