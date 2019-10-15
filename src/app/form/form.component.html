@@ -1,7 +1,7 @@
 <div class="container">
   <div [hidden]="submitted">
-
-    <form (ngSubmit)="salvar()" #alunoForm="ngForm">
+                            <!--alunoForm.resetForm() para não aparecer "nome obrigatório ao limpar campo..."-->
+    <form (ngSubmit)="salvar();alunoForm.resetForm()" #alunoForm="ngForm">
       <div class="form-group">
         <label for="name">Nome</label>
         <input type="text" class="form-control" id="name"
